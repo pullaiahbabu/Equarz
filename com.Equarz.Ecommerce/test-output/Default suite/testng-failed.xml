@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Equarz.Testcases.searchproducttest">
+      <class name="com.Equarz.Testcases.Buynowfunctionalitytest">
         <methods>
-          <include name="intialization"/>
-          <include name="verifyurl"/>
+          <include name="addbuy"/>
+          <include name="initialize"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.Equarz.Testcases.searchproducttest -->
+      </class> <!-- com.Equarz.Testcases.Buynowfunctionalitytest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
