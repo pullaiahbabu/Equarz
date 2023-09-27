@@ -7,9 +7,11 @@ import java.io.IOException;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.DataProvider;
 
+import com.Pageobjects.homepage;
 import com.base.Testbase;
 
 public class Utils extends Testbase {
@@ -34,7 +36,15 @@ public class Utils extends Testbase {
 		}
 		return data;
 		
+		
+		
+		
 	}
+public static homepage dropdown(WebElement value, String text) {
+	Select sel = new Select(value);
+	sel.selectByValue(text);
+    return new homepage();
+}
 	
 
 	

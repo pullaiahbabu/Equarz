@@ -1,21 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-14T15:47:56 IST" name="Default suite" finished-at="2023-09-14T15:48:24 IST" duration-ms="28914">
+  <suite started-at="2023-09-26T15:11:46 IST" name="Default suite" finished-at="2023-09-26T15:14:00 IST" duration-ms="133327">
     <groups>
     </groups>
-    <test started-at="2023-09-14T15:47:56 IST" name="Default test" finished-at="2023-09-14T15:48:24 IST" duration-ms="28914">
-      <class name="com.Equarz.Testcases.searchproducttest">
-        <test-method is-config="true" signature="intialization()[pri:0, instance:com.Equarz.Testcases.searchproducttest@1a942c18]" started-at="2023-09-14T15:47:56 IST" name="intialization" finished-at="2023-09-14T15:48:09 IST" duration-ms="12924" status="PASS">
+    <test started-at="2023-09-26T15:11:46 IST" name="Default test" finished-at="2023-09-26T15:14:00 IST" duration-ms="133327">
+      <class name="com.Equarz.Testcases.Buynowfunctionalitytest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.Buynowfunctionalitytest@3c77d488]" started-at="2023-09-26T15:11:46 IST" name="initialize" finished-at="2023-09-26T15:12:15 IST" duration-ms="28271" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- intialization -->
-        <test-method signature="verifyurl()[pri:0, instance:com.Equarz.Testcases.searchproducttest@1a942c18]" started-at="2023-09-14T15:48:09 IST" name="verifyurl" finished-at="2023-09-14T15:48:24 IST" duration-ms="15884" status="PASS">
+        </test-method> <!-- initialize -->
+        <test-method signature="addbuy()[pri:0, instance:com.Equarz.Testcases.Buynowfunctionalitytest@3c77d488]" started-at="2023-09-26T15:12:15 IST" name="addbuy" finished-at="2023-09-26T15:12:15 IST" duration-ms="14" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Driver must be set]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Driver must be set
+at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+at org.openqa.selenium.interactions.Actions.<init>(Actions.java:59)
+at com.Pageobjects.Buynowfunctionality.addbuy(Buynowfunctionality.java:54)
+at com.Equarz.Testcases.Buynowfunctionalitytest.addbuy(Buynowfunctionalitytest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyurl -->
-      </class> <!-- com.Equarz.Testcases.searchproducttest -->
+        </test-method> <!-- addbuy -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Equarz.Testcases.Buynowfunctionalitytest@3c77d488]" started-at="2023-09-26T15:12:15 IST" name="teardown" finished-at="2023-09-26T15:12:15 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.Buynowfunctionalitytest@3c77d488]" started-at="2023-09-26T15:12:15 IST" name="initialize" finished-at="2023-09-26T15:13:11 IST" duration-ms="56334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="buynow()[pri:0, instance:com.Equarz.Testcases.Buynowfunctionalitytest@3c77d488]" started-at="2023-09-26T15:13:11 IST" name="buynow" finished-at="2023-09-26T15:14:00 IST" duration-ms="48616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buynow -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Equarz.Testcases.Buynowfunctionalitytest@3c77d488]" started-at="2023-09-26T15:14:00 IST" name="teardown" finished-at="2023-09-26T15:14:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.Equarz.Testcases.Buynowfunctionalitytest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
