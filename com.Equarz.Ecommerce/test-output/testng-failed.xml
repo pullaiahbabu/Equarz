@@ -3,31 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Equarz.Testcases.homepagelinks_test">
+      <class name="com.Equarz.Testcases.logout_test">
         <methods>
-          <include name="login"/>
-          <include name="google"/>
-          <include name="latestproduct"/>
-          <include name="pinterest"/>
-          <include name="linkedin"/>
-          <include name="mail"/>
-          <include name="facebook"/>
-          <include name="returnpolicy"/>
-          <include name="teardown"/>
-          <include name="trackorder"/>
-          <include name="toprated"/>
-          <include name="insta"/>
+          <include name="logout"/>
+          <include name="refresh"/>
+          <include name="back"/>
           <include name="initialize"/>
-          <include name="refundpolicy"/>
-          <include name="phone"/>
-          <include name="profileinfo"/>
-          <include name="search"/>
-          <include name="supportticket"/>
-          <include name="twitter"/>
-          <include name="cancellation"/>
-          <include name="sellingproducts"/>
         </methods>
-      </class> <!-- com.Equarz.Testcases.homepagelinks_test -->
+      </class> <!-- com.Equarz.Testcases.logout_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
